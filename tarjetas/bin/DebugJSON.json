@@ -1,0 +1,102 @@
+{
+  "GOOGLE": {
+    "10": [
+      {
+        "Codigo": 111111111,
+        "usuario": "miguel",
+        "Fecha comprado": 0,
+        "Fecha entregado": 0
+      }
+    ],
+    "15": [
+      {
+        "Codigo": 111111111,
+        "usuario": "miguel",
+        "Fecha comprado": 0,
+        "Fecha entregado": 0
+      }
+    ],
+    "25": [
+      {
+        "Codigo": 111111111,
+        "usuario": "miguel",
+        "Fecha comprado": 0,
+        "Fecha entregado": 0
+      }
+    ],
+    "50": [
+      {
+        "Codigo": 111111111,
+        "usuario": "miguel",
+        "Fecha comprado": 0,
+        "Fecha entregado": 0
+      }
+    ]
+  },
+  "STEAM": {
+    "5": [
+      {
+        "Codigo": 111111111,
+        "usuario": "miguel",
+        "Fecha comprado": 0,
+        "Fecha entregado": 0
+      }
+    ],
+    "10": [
+      {
+        "Codigo": 111111111,
+        "usuario": "miguel",
+        "Fecha comprado": 0,
+        "Fecha entregado": 0
+      }
+    ],
+    "20": [
+      {
+        "Codigo": 111111111,
+        "usuario": "miguel",
+        "Fecha comprado": 0,
+        "Fecha entregado": 0
+      }
+    ],
+    "30": [
+      {
+        "Codigo": 111111111,
+        "usuario": "miguel",
+        "Fecha comprado": 0,
+        "Fecha entregado": 0
+      }
+    ]
+  },
+  "PSN": {
+    "10": [
+      {
+        "Codigo": 111111111,
+        "usuario": "miguel",
+        "Fecha comprado": 0,
+        "Fecha entregado": 0
+      }
+    ],
+    "20": [
+      {
+        "Codigo": 111111111,
+        "usuario": "miguel",
+        "Fecha comprado": 0,
+        "Fecha entregado": 0
+      }
+    ],
+    "30": [
+      {
+        "Codigo": 111111111,
+        "usuario": "miguel",
+        "Fecha comprado": 0,
+        "Fecha entregado": 0
+      },
+      {
+        "codigo": "",
+        "usuario": "-",
+        "fecha de compra": "2017-04-06T00:00:00-03:00",
+        "fecha de entrega": "-"
+      }
+    ]
+  }
+}

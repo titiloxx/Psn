@@ -1,0 +1,84 @@
+{
+  "GOOGLE": {
+    "10": [],
+    "15": [],
+    "25": [],
+    "50": []
+  },
+  "PSN": {
+    "20": [],
+    "30": [],
+    "10": [
+      {
+        "codigo": "pato",
+        "usuario": "-",
+        "fecha de compra": "2017-04-06T00:00:00-03:00",
+        "fecha de entrega": "-"
+      },
+      {
+        "codigo": "pato",
+        "usuario": "-",
+        "fecha de compra": "2017-04-06T00:00:00-03:00",
+        "fecha de entrega": "-"
+      },
+      {
+        "codigo": "pato",
+        "usuario": "-",
+        "fecha de compra": "2017-04-06T00:00:00-03:00",
+        "fecha de entrega": "-"
+      }
+    ]
+  },
+  "STEAM": {
+    "5": [
+      {
+        "codigo": "negro",
+        "usuario": "-",
+        "fecha de compra": "2017-04-19T00:00:00-03:00",
+        "fecha de entrega": "-"
+      }
+    ],
+    "10": [
+      {
+        "codigo": "mario",
+        "usuario": "-",
+        "fecha de compra": "2017-04-06T00:00:00-03:00",
+        "fecha de entrega": "-"
+      },
+      {
+        "codigo": "puto",
+        "usuario": "-",
+        "fecha de compra": "2017-04-19T00:00:00-03:00",
+        "fecha de entrega": "-"
+      }
+    ],
+    "20": [
+      {
+        "codigo": "santi",
+        "usuario": "-",
+        "fecha de compra": "2017-04-19T00:00:00-03:00",
+        "fecha de entrega": "-"
+      }
+    ],
+    "30": [
+      {
+        "codigo": "",
+        "usuario": "-",
+        "fecha de compra": "2017-04-06T00:00:00-03:00",
+        "fecha de entrega": "-"
+      },
+      {
+        "codigo": "titi",
+        "usuario": "-",
+        "fecha de compra": "2017-04-06T00:00:00-03:00",
+        "fecha de entrega": "-"
+      },
+      {
+        "codigo": "trabuco",
+        "usuario": "-",
+        "fecha de compra": "2017-04-19T00:00:00-03:00",
+        "fecha de entrega": "-"
+      }
+    ]
+  }
+}
