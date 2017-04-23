@@ -28,127 +28,49 @@ namespace tarjetas
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem.ToString() == "STEAM")
-            {
-                radioButton7.Visible = false;
-                radioButton6.Visible = true;
-                radioButton5.Visible = false;
-                radioButton4.Visible = true;
-                radioButton3.Visible = false;
-                radioButton2.Visible = true;
-                radioButton1.Visible = true;
-                radioButton7.Text = "50";
-                radioButton6.Text = "30";
-                radioButton5.Text = "25";
-                radioButton4.Text = "20";
-                radioButton3.Text = "15";
-                radioButton2.Text = "10";
-                radioButton1.Text = "5";
-                
-            }
-            else
-               if (comboBox1.SelectedItem.ToString() == "PSN")
-            {
-                radioButton7.Visible = false;
-                radioButton6.Visible = true;
-                radioButton5.Visible = false;
-                radioButton4.Visible = true;
-                radioButton3.Visible = false;
-                radioButton2.Visible = true;
-                radioButton1.Visible = false;
-                radioButton7.Text = "50";
-                radioButton6.Text = "30";
-                radioButton5.Text = "25";
-                radioButton4.Text = "20";
-                radioButton3.Text = "15";
-                radioButton2.Text = "10";
-                radioButton1.Text = "5";
-            }
-            else
-               if (comboBox1.SelectedItem.ToString() == "GOOGLE")
-            {
-                radioButton7.Visible = true;
-                radioButton6.Visible = false;
-                radioButton5.Visible = true;
-                radioButton4.Visible = true;
-                radioButton3.Visible = true;
-                radioButton2.Visible = true;
-                radioButton1.Visible = false;
-                radioButton7.Text = "50";
-                radioButton6.Text = "30";
-                radioButton5.Text = "25";
-                radioButton4.Text = "20";
-                radioButton3.Text = "15";
-                radioButton2.Text = "10";
-                radioButton1.Text = "5";
-            }
+           
+            
         }
-        private string eleccion ()
+
+        private bool verificar(string nombre, int valor)
         {
-            string titi="";
-            if ( radioButton1.Checked)
+            if (nombre=="PSN")
             {
-              titi =  radioButton1.Text;
-            }
-            else {
-                if (radioButton2.Checked)
-            {
-                    titi = radioButton2.Text;
-            }
+               if(valor==10|| valor == 20|| valor == 30)
+                return true;
                 else
                 {
-                    if (radioButton3.Checked)
-                    {
-                        titi = radioButton3.Text;
-
-                    }
-                    else
-                    {
-                        if (radioButton4.Checked)
-                        {
-                            titi = radioButton4.Text;
-                        }
-                        else
-                        {
-                            if (radioButton5.Checked)
-                            {
-                                titi =radioButton5.Text;
-                            }
-                            else
-                            {
-                                if (radioButton6.Checked)
-                                {
-                                    titi = radioButton6.Text;
-                                }
-                                else
-                                {
-                                    if (radioButton7.Checked) 
-                                    {
-                                        titi = radioButton7.Text;
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    return false;
                 }
-                
-
-               
             }
-            
-
-            return titi;
-
+           else if (nombre == "GOOGLE")
+            {
+                if (valor == 10 || valor == 20 || valor == 25 || valor == 50 || valor == 15)
+                    return true;
+                else
+                {
+                    return false;
+                }
+            }
+            else if (nombre == "STEAM")
+            {
+                if (valor == 10 || valor == 20 || valor == 5 || valor == 30)
+                    return true;
+                else
+                {
+                    return false;
+                }
+            }
+            MessageBox.Show("Revisa el nombre de la tarjeta");
+            return false;
 
         }
-
-
         private void guardarcode(string tarjeta, string plata, string code)
         {
             JObject chico = new JObject();
             chico.Add("codigo", code);
             chico.Add("usuario", "-");
-            chico.Add("fecha de compra", DateTime.Today);
+            chico.Add("fecha de compra", DateTime.Today.Date);
             chico.Add("fecha de entrega", "-");
             JObject objeto = (JObject)procesado[tarjeta];
             JArray lista = (JArray)objeto[plata];
@@ -166,7 +88,15 @@ namespace tarjetas
         private void button1_Click(object sender, EventArgs e)
         {
             string path = System.IO.Directory.GetCurrentDirectory();
-            guardarcode(comboBox1.Text, eleccion(),textBox1.Text);
+            if (verificar(comboBox1.Text, Convert.ToInt32(textBox2.Text)))
+            {
+                guardarcode(comboBox1.Text, textBox2.Text, textBox1.Text);
+            }
+            else
+            {
+                MessageBox.Show("No existe un valor para esa tarjeta");
+            }
+           
         
 
         }
