@@ -43,7 +43,7 @@ namespace tarjetas
                 radioButton2.Visible = true;
                 radioButton1.Visible = true;
                 radioButton7.Text = "50";
-                radioButton6.Text = "30";
+                radioButton6.Text = "30";//5555
                 radioButton5.Text = "25";
                 radioButton4.Text = "20";
                 radioButton3.Text = "15";
