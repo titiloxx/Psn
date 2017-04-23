@@ -43,7 +43,7 @@ namespace tarjetas
                 radioButton2.Visible = true;
                 radioButton1.Visible = true;
                 radioButton7.Text = "50";
-                radioButton6.Text = "30";
+                radioButton6.Text = "30";//5555
                 radioButton5.Text = "25";
                 radioButton4.Text = "20";
                 radioButton3.Text = "15";
@@ -181,7 +181,7 @@ namespace tarjetas
             JArray a = (JArray)procesado[nombre][valortarjeta];
             textBox1.Text = Convert.ToString(santi());
             if ((a != null) && (cantidad < santi()))
-                for (int i = 0; i <= cantidad; i++)
+                for (int i = 0; i <= cantidad; i++)//88
                 {
                     string codigo = Convert.ToString(procesado[nombre][valortarjeta][i]["codigo"]);
 
@@ -211,7 +211,7 @@ namespace tarjetas
             String A = "";
             int i = (listBox1.Items.Count) - 1;       //Empieza contando en 0 el hdp
             while (i >= 0)
-            {
+            {//888
                 A = A + (Convert.ToString(listBox1.Items[i]));
                 A = A + "\r\n";
                 i = i - 1;

@@ -32,3 +32,15 @@ C:\Users\Pc\Google Drive\Ventas\Counter Strike GO\Armas\Tarjetas\tarjetas\bin\De
 C:\Users\Pc\Google Drive\Ventas\Counter Strike GO\Armas\Tarjetas\tarjetas\bin\Debug\tarjetas.pdb
 C:\Users\Pc\Google Drive\Ventas\Counter Strike GO\Armas\Tarjetas\tarjetas\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Pc\Google Drive\Ventas\Counter Strike GO\Armas\Tarjetas\tarjetas\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\bin\Debug\tarjetas.exe.config
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\bin\Debug\tarjetas.exe
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\bin\Debug\tarjetas.pdb
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\obj\Debug\tarjetas.csprojResolveAssemblyReference.cache
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\obj\Debug\tarjetas.Form1.resources
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\obj\Debug\tarjetas.Form2.resources
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\obj\Debug\tarjetas.Properties.Resources.resources
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\obj\Debug\tarjetas.csproj.GenerateResource.Cache
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\obj\Debug\tarjetas.exe
+C:\Users\Pc\Documents\GitHub\Psn\tarjetas\obj\Debug\tarjetas.pdb
