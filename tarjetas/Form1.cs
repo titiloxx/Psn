@@ -181,7 +181,7 @@ namespace tarjetas
             JArray a = (JArray)procesado[nombre][valortarjeta];
             textBox1.Text = Convert.ToString(santi());
             if ((a != null) && (cantidad < santi()))
-                for (int i = 0; i <= cantidad; i++)
+                for (int i = 0; i <= cantidad; i++)//88
                 {
                     string codigo = Convert.ToString(procesado[nombre][valortarjeta][i]["codigo"]);
 
