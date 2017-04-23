@@ -26,8 +26,30 @@ namespace tarjetas
 
         }
 
+
+
+        JObject eliminados;
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            string json = System.IO.File.ReadAllText("JSON.json");
+            eliminados = JObject.Parse(json);
+
+        }
+
         private void usarcod_Click(object sender, EventArgs e)
         {
+            String A = "";
+            int i = (listBox1.Items.Count) - 1;       //Empieza contando en 0 el hdp
+            while (i >= 0)
+            {//888888
+                A = A + (Convert.ToString(listBox1.Items[i]));
+                A = A + "\r\n";
+                i = i - 1;
+            }
+            Clipboard.SetText(A);
+
+
+
 
         }
 
@@ -154,11 +176,13 @@ namespace tarjetas
 
 
         }
-        private int santi()
+        private int santi()//cantidad codigos en el arreglo
         {
             string nombre = tipotarjeta.Text;
             string valortarjeta = eleccion();
             int cantidad;
+            cantidad = 0;
+
             JArray a = (JArray)procesado[nombre][valortarjeta];
             cantidad = a.Count;
 
@@ -174,23 +198,26 @@ namespace tarjetas
         private void buscarcod_Click(object sender, EventArgs e) // me busca el o los codigos
         {
             listBox1.Items.Clear();
-            int cantidad = Convert.ToInt32(comboBox1.SelectedItem);
+            int cantidad = Convert.ToInt32(comboBox1.Text);
             string nombre = tipotarjeta.Text;
             string valortarjeta = eleccion();
             listBox1.Text = Convert.ToString(santi());
             JArray a = (JArray)procesado[nombre][valortarjeta];
             textBox1.Text = Convert.ToString(santi());
-            if ((a != null) && (cantidad < santi()))
-                for (int i = 0; i <= cantidad; i++)//88
+            if ((a != null) && (cantidad <= santi()))
+            { 
+            for (int i = 0; i < cantidad; i++)//agrega el codigo en el libox
                 {
                     string codigo = Convert.ToString(procesado[nombre][valortarjeta][i]["codigo"]);
 
                     listBox1.Items.Add(codigo);
                 }
+            }
             else
             {
-                MessageBox.Show("No hay tantos");
+                MessageBox.Show("No hay tantos codigos");
             }
+            usarcod.Visible = true;//mostrar el boton UTILIZAR !
         }
 
         private void bgregarToolStripMenuItem_Click(object sender, EventArgs e)
