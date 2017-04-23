@@ -211,7 +211,7 @@ namespace tarjetas
             String A = "";
             int i = (listBox1.Items.Count) - 1;       //Empieza contando en 0 el hdp
             while (i >= 0)
-            {//888
+            {//888888
                 A = A + (Convert.ToString(listBox1.Items[i]));
                 A = A + "\r\n";
                 i = i - 1;
